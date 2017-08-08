@@ -1,7 +1,11 @@
+version: '2'
 
 services:
   webcap:
     restart: always
     image: wan0eve/docker-webcap:latest
+    # build: ./
+    volumes:
+      - ./data:/tmp/webacp
     ports:
       - "7381:7381"
