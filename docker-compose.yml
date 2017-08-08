@@ -1,0 +1,7 @@
+
+services:
+  webcap:
+    restart: always
+    image: wan0eve/docker-webcap:latest
+    ports:
+      - "7381:7381"
