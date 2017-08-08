@@ -17,10 +17,6 @@ RUN apt-get update && \
 RUN mkdir -p /tmp/webcap/images && \
 	chmod -R 777 /tmp/webcap
 
-# RUN rm -rf webcap
-
-# ADD ./src /webcap
-
 WORKDIR /webcap
 
 EXPOSE 7381

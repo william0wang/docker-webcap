@@ -6,6 +6,6 @@ services:
     image: wan0eve/docker-webcap:latest
     # build: ./
     volumes:
-      - ./data:/tmp/webacp
+      - ./data:/tmp/webcap
     ports:
       - "7381:7381"
