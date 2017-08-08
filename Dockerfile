@@ -7,10 +7,11 @@ RUN apt-get update && \
 	apt-get install curl bzip2 libfontconfig libfreetype6 software-properties-common wget -y && \
 	wget https://github.com/chenqing/ng-mini/raw/master/font/msyh.ttf -O msyh.ttf && \
 	cp msyh.ttf /usr/share/fonts/msyh.ttf && \
+	fc-cache -fv && \
 	git clone https://github.com/william0wang/webcap-nodejs /webcap && \
     cd webcap && \
-    npm install -g pageres \
-    npm install -g restify \
+    npm install -g pageres && \
+    npm install -g restify && \
     npm install -g
 
 RUN mkdir -p /tmp/webcap/images && \
